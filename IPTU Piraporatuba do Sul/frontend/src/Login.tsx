@@ -61,17 +61,17 @@ function Login() {
                         placeholder="Nome Completo"
                         value={nome}
                         onChange={(e) => setNome(e.target.value)}
-                        style={styles.input}
+                        maxLength={120}
                         required
                     />
                 )}
 
                 <input
-                    type="text"
+                    type="email"
                     placeholder="E-mail"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    style={styles.input}
+                    maxLength={100}
                     required
                 />
 
@@ -80,7 +80,7 @@ function Login() {
                     placeholder="Senha"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    style={styles.input}
+                    maxLength={8}
                     required
                 />
 
